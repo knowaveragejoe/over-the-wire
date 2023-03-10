@@ -130,4 +130,26 @@ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
 
 ### bandit 22
+```sh
+bandit22@bandit:~$ cat /etc/cron.d/cronjob_bandit23
+@reboot bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
+* * * * * bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
+```
 
+```sh
+#!/bin/bash
+
+myname=bandit23
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+
+echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+
+cat /etc/bandit_pass/$myname > /tmp/$mytarget
+```
+
+```sh
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+```
+QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
+
+### bandit 23
