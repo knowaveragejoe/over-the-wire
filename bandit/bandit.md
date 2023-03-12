@@ -1,4 +1,5 @@
-## Bandit level numbers are the current level, commands and pw obtained for the next level
+# Bandit level numbers are the current level, commands and pw obtained for the next level
+
 ## bandit 0
 NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 
