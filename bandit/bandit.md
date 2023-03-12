@@ -1,59 +1,59 @@
 ## Bandit level numbers are the current level, commands and pw obtained for the next level
-### bandit 0
+## bandit 0
 NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 
-### bandit 1
+## bandit 1
 rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 
-### bandit 2
+## bandit 2
 aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 
-### bandit 3
+## bandit 3
 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 
-### bandit 4
+## bandit 4
 lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
-### bandit 5
+## bandit 5
 P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
-### bandit 6
+## bandit 6
 z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 
-### bandit 7
+## bandit 7
 TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 
-### bandit 8
+## bandit 8
 EN632PlfYiZbn3PhVK3XOGSlNInNE00t
 
-### bandit 9
+## bandit 9
 G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 
-### bandit 10
+## bandit 10
 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 
-### bandit 11
+## bandit 11
 JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
-### bandit 12
+## bandit 12
 wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 
-### bandit 13
+## bandit 13
 fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
 
-### bandit 14
+## bandit 14
 ```sh
 echo "fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq" | nc localhost 30000
 ```
 jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 
-### bandit 15
+## bandit 15
 ```sh
 openssl s_client -connect localhost:30001 -ign_eof
 ```
 JQttfApK4SeyHwDlI9SXGR50qclOAil1
 
-### bandit 16
+## bandit 16
 ```sh
 nmap -sV -p 31000-32000 localhost1
 openssl s_client -connect localhost:31790 -ign_eof
@@ -89,33 +89,33 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 -----END RSA PRIVATE KEY-----
 ```
 
-### bandit 17
+## bandit 17
 ```sh
 diff passwords.old passwords.new`
 ```
 hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
 
-### bandit 18
+## bandit 18
 ```sh
-ssh bandit18@### bandit -t ls -la
-ssh bandit18@### bandit -t cat readme
+ssh bandit18@## bandit -t ls -la
+ssh bandit18@## bandit -t cat readme
 ```
 awhqfNnAbc1naukrpqDYcF95h7HoMTrC
 
-### bandit 19
+## bandit 19
 ```sh
 ./bandit20-do cat /etc/bandit_pass/bandit20
 ```
 VxCazJaVykI6W36BkBU0mJTCM8rR95XT
 
-### bandit 20
+## bandit 20
 ```sh
 nc -l 40000 & # (or in a new shell)
 ./suconnect 40000
 ```
 NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
 
-### bandit 21
+## bandit 21
 ```sh
 bandit21@bandit:~$ cat /etc/cron.d/cronjob_bandit22
 @reboot bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
@@ -129,7 +129,8 @@ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 ```
 WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
 
-### bandit 22
+## bandit 22
+
 ```sh
 bandit22@bandit:~$ cat /etc/cron.d/cronjob_bandit23
 @reboot bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
@@ -152,7 +153,7 @@ cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 ```
 QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
 
-### bandit 23
+## bandit 23
 ```sh
 echo "cat /etc/bandit_pass/bandit24 > /tmp/bandit23/bandit24.txt" > /var/spool/bandit24/foo/bandit23.sh
 chmod o+x /var/spool/bandit24/foo/bandit23.sh
@@ -160,4 +161,95 @@ chmod o+x /var/spool/bandit24/foo/bandit23.sh
 
 VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar
 
-### bandit 25
+## bandit 25
+```sh
+for i in {0000..9999}; do
+    echo "VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar" $1 > pass.txt
+done
+
+cat pass.txt | nc 127.0.0.1 30002
+```
+p7TaowMYrmu23Ol8hiZh9UvD0O9hpx8d
+
+## Bandit 26
+
+```sh
+#!/bin/sh
+
+export TERM=linux
+
+exec more ~/text.txt
+exit 0
+```
+Window must be shrunk to small enough to trigger `more` command mode, use v to open file in vim
+
+Within Vim:
+```sh
+:set shell=/bin/bash
+:shell
+```
+
+c7GvcKlw9mC7aUQaPx7nwFstuAIBw1o1
+
+## Bandit 27
+Using prior vim shell:
+```sh
+~/bandit27-do cat /etc/bandit_pass/bandit27
+```
+
+YnQpBuifNMas1hcUFk70ZmqkhUU2EuaS
+
+## Bandit 28
+```sh
+git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
+cat repo/README.md
+```
+
+AVanL161y9rsbcJIsFHuw35rjaOM19nR
+
+## Bandity 29
+```sh
+git clone ssh://bandit28-git@localhost:2220/home/bandit28-git/repo
+git log -p
+```
+
+tQKvmcwNYcFS6vmPHIUSI3ShmsrQZK8S
+
+## Bandit 30
+```sh
+git clone ssh://bandit29-git@localhost:2220/home/bandit29-git/repo
+git branch -a
+git checkout dev
+git log -p
+```
+xbhV3HpNGlTIdnjUrdAlPzc2L6y9EOnS
+
+## Bandit 31
+
+```sh
+git clone ssh://bandit30-git@localhost:2220/home/bandit30-git/repo
+git tag
+git show secret
+```
+
+OoffzGDlzhAlerFJ2cAiz1D41JW1Mhmt
+
+### Bandit 32
+
+```sh
+git clone ssh://bandit30-git@localhost:2220/home/bandit30-git/repo
+git add key.txt
+git push
+```
+
+rmCBvG56y58BXzv98yZGdO7ATVL5dW8y
+
+### Bandit 33
+Shell is set to /home/bandit32/uppershell, to escape:
+
+```sh
+$0
+cat /etc/bandit_pass/bandit33
+```
+
+odHo63fHiFqcWWJG9rLiLDtPm45KzUKy
